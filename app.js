@@ -24,7 +24,7 @@ app.use(cors({
   origin: [publicDomain]
 }));
 
-app.use('/api/v1', todoRoute);
+app.use('/', todoRoute);
 
 const server = app.listen(port, function(){
   console.log('Listening on port ' + port);
